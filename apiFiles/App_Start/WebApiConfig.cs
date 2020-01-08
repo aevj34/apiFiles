@@ -10,6 +10,7 @@ namespace apiFiles
         public static void Register(HttpConfiguration config)
         {
             // Configuración y servicios de API web
+            config.EnableCors();
 
             // Rutas de API web
             config.MapHttpAttributeRoutes();
